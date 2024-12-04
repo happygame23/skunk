@@ -1,0 +1,18 @@
+# 입력창 및 버튼 (가로 정렬)
+buttonFrame = Frame(window, bg="white")
+buttonFrame.pack(pady=10)
+
+guessField = Entry(buttonFrame, width=10)
+guessField.grid(row=0, column=0, sticky="ew")
+
+tryButton = Button(buttonFrame, text="시도", fg="green", bg="white", command=guessing)
+tryButton.grid(row=0, column=1, sticky="ew")
+
+resetButton = Button(buttonFrame, text="초기화", fg="red", bg="white", command=reset_game)
+resetButton.grid(row=0, column=2, sticky="ew")
+
+hintButton = Button(buttonFrame, text="힌트", fg="blue", bg="white", command=give_hint)
+hintButton.grid(row=0, column=3, sticky="ew")
+
+rankingButton = Button(buttonFrame, text="랭킹", fg="purple", bg="white", command=show_rankings)
+rankingButton.grid(row=0, column=4, sticky="ew")
