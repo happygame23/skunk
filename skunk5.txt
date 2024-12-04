@@ -1,0 +1,3 @@
+# 애니메이션 함수 (공과 풍선)
+def animate_ball_and_balloons():
+    global ball_x, ball_dx, balloon_x_left, balloon_x_right, balloon_dx_left, balloon_dx_right
