@@ -1,0 +1,6 @@
+# 도전자 이름 입력
+nameFrame = Frame(window, bg="white")
+nameFrame.pack(pady=10)
+Label(nameFrame, text="도전자 이름: ", bg="white").pack(side="left")
+nameField = Entry(nameFrame, width=20)
+nameField.pack(side="left")
