@@ -1,0 +1,19 @@
+# 랭킹 표시 창
+rankingWindow = Toplevel(window)
+rankingWindow.title("랭킹")
+rankingWindow.geometry("300x300")
+rankingWindow.configure(bg="white")
+rankingWindow.withdraw()  # 처음에는 보이지 않게 설정
+
+rankingLabel = Label(rankingWindow, text="랭킹:", bg="white", font=("Arial", 12), justify="left")
+rankingLabel.pack(pady=10, anchor="w")
+
+# 아래쪽 캔버스 추가 (애니메이션을 위한 캔버스)
+canvas_bottom = Canvas(window, width=600, height=300, bg="lightyellow")
+canvas_bottom.pack()
+
+# 애니메이션 시작
+animate_ball_and_balloons()
+
+# 이벤트 루프 시작
+window.mainloop()
