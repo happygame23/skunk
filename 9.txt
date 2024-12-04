@@ -1,0 +1,10 @@
+# 시도 횟수 표시
+attemptLabel = Label(window, text="시도 횟수: 0", bg="white", font=("Arial", 12))
+attemptLabel.pack(pady=5)
+
+# 결과 및 상태 표시
+resultLabel = Label(window, text="", bg="white", font=("Arial", 12))
+resultLabel.pack()
+
+hintLabel = Label(window, text="", bg="white", font=("Arial", 12))
+hintLabel.pack()
