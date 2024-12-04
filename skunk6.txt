@@ -1,0 +1,6 @@
+ # 공 애니메이션 (왼쪽, 오른쪽 끝에 닿으면 방향 반전)
+    if ball_x + 20 > 600 or ball_x - 20 < 0:
+        ball_dx = -ball_dx
+    ball_x += ball_dx
+    canvas_bottom.delete("ball")  # 이전 공 지우기
+    canvas_bottom.create_oval(ball_x - 20, ball_y - 20, ball_x + 20, ball_y + 20, fill="red", tags="ball")
