@@ -1,0 +1,5 @@
+# 캔버스 생성 (상단 캔버스 크기 변경)
+canvas_top = Canvas(window, width=600, height=50, bg="lightblue")  # height를 50으로 수정
+canvas_top.pack()
+canvas_top.create_text(300, 25, text="분반:3, 학번:20232184, 이름:박형석", font=("Arial", 14), fill="black")
+window.after(30000, change_canvas_color)  # 캔버스 색상 변경 스케줄링

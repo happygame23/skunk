@@ -1,0 +1,6 @@
+# 오른쪽에서 왼쪽으로 날아가는 풍선
+    if balloon_x_right - 40 < 0:  # 풍선이 화면 왼쪽 끝에 닿으면 오른쪽으로 방향 반전
+        balloon_dx_right = -balloon_dx_right
+    balloon_x_right += balloon_dx_right
+    canvas_bottom.delete("balloon_right")  # 이전 풍선 지우기
+    canvas_bottom.create_oval(balloon_x_right - 40, balloon_y, balloon_x_right, balloon_y + 60, fill="green", tags="balloon_right")
