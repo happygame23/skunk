@@ -1,0 +1,3 @@
+# 왼쪽 상단과 오른쪽 상단에 별 추가
+canvas_top.create_text(10, 10, text="★", font=("Arial", 24), fill="gold", anchor="nw")
+canvas_top.create_text(580, 10, text="★", font=("Arial", 24), fill="gold", anchor="ne")
